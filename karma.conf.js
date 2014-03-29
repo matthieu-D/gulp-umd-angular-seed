@@ -19,7 +19,6 @@ module.exports = function(config) {
       {pattern: 'src/scripts/**/*.js', included: false},
       {pattern: 'tests/**/*Spec.js', included: false},
       {pattern: 'bower_components/**/*.js', included: false},
-      {pattern: 'bower_components/angular/angular.js', included: false}
     ],
 
 
