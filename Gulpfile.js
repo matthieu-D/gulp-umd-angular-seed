@@ -2,10 +2,7 @@ var gulp = require('gulp');
 var karma = require('gulp-karma');
 var wrap = require('gulp-wrap-umd');
 
-var testFiles = [
-  'src/scripts/requireJs/helloModule.js',
-  'tests/requireJs/helloSpec.js'
-];
+var testFiles = ['files in karma conf'];
 
 gulp.task('test', function() {
   // Be sure to return the stream
