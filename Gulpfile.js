@@ -4,9 +4,7 @@ var wrap = require('gulp-wrap-umd');
 
 var testFiles = [
   'src/scripts/requireJs/helloModule.js',
-  'tests/requireJs/helloSpec.js',
-  'src/scripts/umd/helloModule.js',
-  'tests/umd/helloSpec.js'
+  'tests/requireJs/helloSpec.js'
 ];
 
 gulp.task('test', function() {
@@ -16,10 +14,6 @@ gulp.task('test', function() {
       configFile: 'karma.conf.js',
       action: 'run'
     }))
-    //.on('error', function(err) {
-      //// Make sure failed tests cause gulp to exit non-zero
-      //throw err;
-    //});
 });
 
 gulp.task('umd', function(){
