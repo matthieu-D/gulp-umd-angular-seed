@@ -16,7 +16,8 @@ require.config({
   // Karma serves files under /base, which is the basePath from your config file
   baseUrl: '/base',
   paths: {
-      'umdHelloModule':'src/scripts/umdHelloModule',
+      'requireJsHelloModule':'src/scripts/requireJs/helloModule',
+      'umdHelloModule':'src/scripts/umd/helloModule',
       'angular':'bower_components/angular/angular',
       'angular-mocks':'bower_components/angular-mocks/angular-mocks'
   },
@@ -28,6 +29,9 @@ require.config({
           deps:['angular']
       },
       'angular-mocks': {
+          deps:['angular']
+      },
+      'requireJsHelloModule':{
           deps:['angular']
       }
   },

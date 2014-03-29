@@ -1,9 +1,12 @@
 var gulp = require('gulp');
 var karma = require('gulp-karma');
+var wrap = require('gulp-wrap-umd');
 
 var testFiles = [
-  'src/hello.js',
-  'test/hello.js'
+  'src/scripts/requireJs/helloModule.js',
+  'tests/requireJs/helloSpec.js',
+  'src/scripts/umd/helloModule.js',
+  'tests/umd/helloSpec.js'
 ];
 
 gulp.task('test', function() {
@@ -17,6 +20,14 @@ gulp.task('test', function() {
       //// Make sure failed tests cause gulp to exit non-zero
       //throw err;
     //});
+});
+
+gulp.task('umd', function(){
+  gulp.src(['src/scripts/requireJs/helloModule.js'])
+    .pipe(wrap({
+      namespace: 'helloUmd'
+     }))
+    .pipe(gulp.dest('src/scripts/umd/'));
 });
 
 gulp.task('default', function() {
