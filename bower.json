@@ -1,0 +1,30 @@
+{
+  "name": "gulp-umd-angular-seed",
+  "version": "0.0.1",
+  "homepage": "https://github.com/matthieu-D/gulp-umd-angular-seed",
+  "authors": [
+    "matthieu-D <matthieu.drula@gmail.com>"
+  ],
+  "description": "Example project to use umd requirejs and angular",
+  "keywords": [
+    "gulp",
+    "umd",
+    "requirejs",
+    "angular",
+    "seed"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.15"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.15"
+  }
+}
