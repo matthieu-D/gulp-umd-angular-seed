@@ -11,5 +11,5 @@ From scratch:
   <li>gulp umd</li>
   <li>gulp</li>
 </ul>
-And here you have a tested umd module that you can use in Javascript or requireJs or Broswerify modules
+And here you have a tested umd module that you can use in Javascript or requireJs or Broswerify modules.
 
